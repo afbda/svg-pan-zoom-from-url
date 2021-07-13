@@ -6,7 +6,7 @@
     <body id="body">
         <script>
             window.onload = function (){
-                var url = window.location.pathname.split("/")[1];
+                var url = window.location.pathname.split("/")[2];
                 fetch(url).then(response => {
                     response.text().then(text => {
                         var bodyElem = document.getElementById("body");
